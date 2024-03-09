@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | REDIRECTED |  CS 3 TAKE HOME EXERCISE 2 </title>
+</head>
+<body>
+    <script>
+        function nextimage() {
+            document.getElementById("image").src = "image2.jpg"
+        }
+
+        function previousimage() {
+            document.getElementById("image").src = "image1.jpg"
+        }
+    </script>
+
+
+    <img src="image1.jpg" id="image">
+
+    <button onclick="nextimage()"> Want to see another Image?</button>
+
+    <button onclick="previousimage()"> Want to go back to the Previous Image?</button>
+
+    <style>
+        #image{
+            border: 1vh solid maroon;
+            width: 40vw;
+            height: 80vh;
+            border-radius: 0.4vh;
+        }
+    </style>
+</body>
+</html>
